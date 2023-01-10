@@ -1,13 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Fraunces:wght@700&display=swap");
+html {
+    font-size: 1em;
+}
+
 body {
     background-color: hsl(30, 38%, 92%);
-    display: grid;
-    height: 100vh;
-    width: 100vw;
+    display: flex;
+    width:auto;
+    height: 100px;
     flex-direction: column;
     justify-items: center;
     align-items: center;
 }
+
+main {
+    width: 80vw;
+    max-height: min-content;
+}
+
+/* article {
+    height: min-content;
+} */
 
 h1 {
     font-family: "Fraunces", sans-serif;
@@ -20,17 +33,36 @@ p {
     font-weight: normal;
 }
 
+picture {
+    max-width: 100%;
+}
+
 .card {
+    width: auto;
+    height: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
 }
 
+/* .card > *{
+    flex: content;
+} */
+
 .image {
     display: flex;
+    /* height: 70vh; */
+}
+
+.image img {
+    border-radius: 1.5rem 0 0 1.5rem;
+    
 }
 
 .product {
+    background-color: white;
+    border-radius: 0 1.5rem 1.5rem 0;
+    width: 30%;
     padding: 3%;
     display: flex;
     flex-direction: column;
@@ -42,7 +74,7 @@ p {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    letter-spacing: 10px;
+    letter-spacing: 1rem;
 }
 
 .prices {
@@ -74,6 +106,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content:space-evenly;
     border: none;
     border-radius: 5px;
     padding: 5%;
