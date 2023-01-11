@@ -123,3 +123,16 @@ p {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+@media(max-width:630px){
+    .card {
+        flex-direction: column;
+    }
+    .image {
+        border-radius: 1rem 1rem 0 0 ;
+    }
+    .product {
+        gap: 0.5rem;
+        border-radius: 0 0 1rem 1rem;
+    }
+}
